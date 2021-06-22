@@ -1,0 +1,100 @@
+body {
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("body-background.jpg");
+	background-size: cover;
+	color: white;
+	font-size: 17px;
+}
+#title {
+	text-align: center;
+	color: white;
+	font-size: 36px;
+}
+.desciprtion {
+	text-align: center;
+	color: aliceblue;
+	font-size: 18px;
+}
+.container {
+	display: flex;
+	justify-content: center;
+}
+#survey-form {
+	background-color: rgba(60, 70, 130, 0.4);
+	padding: 20px;
+	border: 1px solid black;
+}
+#name-label {
+	color: aliceblue;
+	font-size: 23px;
+}
+#name {
+	font-size: 15px;
+	width: 510px;
+	height: 17px;
+	padding: 3px;
+	border: 0px;
+	border-radius: 2px;
+}
+#email-label {
+	color: aliceblue;
+	font-size: 24px;
+}
+#email {
+	font-size: 15px;
+	width: 510px;
+	height: 17px;
+	padding: 3px;
+	border: 0px;
+	border-radius: 2px;
+}
+#number-label {
+	color: aliceblue;
+	font-size: 24px;
+}
+#number {
+	font-size: 15px;
+	width: 510px;
+	height: 17px;
+	padding: 3px;
+	border: 0px;
+	border-radius: 2px;	
+}
+#dropdown-label {
+	color: aliceblue;
+	font-size: 24px;
+}
+#dropdown-one {
+	font-size: 15px;
+	width: 515px;
+	height: 26px;
+	padding: 3px;
+}
+#dropdown-two {
+	font-size: 15px;
+	width: 515px;
+	height: 26px;
+	padding: 3px;
+}
+#radio-label {
+	color: aliceblue;
+	font-size: 24px;
+}
+#checkbox-label {
+	color: aliceblue;
+	font-size: 24px;
+}
+#textarea {
+	color: aliceblue;
+	font-size: 24px;	
+}
+input[type=submit] {
+	font-size: 16px;
+	background-color: aquamarine;
+	border: 0px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+input[type=submit]:hover {
+	background-color: transparent;
+	border: 2px solid black;
+}
