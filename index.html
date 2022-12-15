@@ -4,22 +4,23 @@
 	<meta charset="utf-8">
 	<title>Survey Form</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
-	<h1 id="title" style="font-family:monospace;">FreeCodeCamp survey form</h1>
+	<h1 id="title" style="font-family:monospace;">freeCodeCamp survey form</h1>
 	<p class="desciprtion">Please take the time to answer the survey, In order to help freeCodeCamp improve. Thank you</p><br>
 	<div class="container">
 		<form id="survey-form">
-			<label id="name-label">Name</label><br>
+			<label id="label">Name</label><br>
 			<input id="name" type="text" name="name" placeholder="Enter your name" required>
 			<br><br>
-			<label id="email-label">Email</label><br>
+			<label id="label">Email</label><br>
 			<input id="email" type="email" name="email" placeholder="Enter your email" required>
 			<br><br>
-			<label id="number-label">Age<span style="font-size:17px;"> (optional)</span></label><br>
+			<label id="label">Age<span style="font-size:17px;"> (optional)</span></label><br>
 			<input id="number" type="number" name="number" min="0" max="9999" placeholder="Enter your age">
 			<br><br>
-			<label id="dropdown-label" for="options">Which option best describes your current role?</label><br>
+			<label id="label" for="options">Which option best describes your current role?</label><br>
 			<select id="dropdown-one" name="options">
 				<option disabled selected>Select current role</option>
 				<option value="student">Student</option>
@@ -29,12 +30,12 @@
 				<option value="others">Others</option>
 			</select>
 			<br><br>
-			<label id="radio-label" for="radioBtn">Would you recommend freeCodeCamp to a friend?</label><br>
+			<label id="label" for="radioBtn">Would you recommend freeCodeCamp to a friend?</label><br>
 			<input type="radio" name="radioBtn" value="definitely" checked>Definitely<br>
 			<input type="radio" name="radioBtn" value="maybe">Maybe<br>
 			<input type="radio" name="radioBtn" value="not-sure">Not sure<br>
 			<input type="radio" name="radioBtn" value="never">Never<br><br>
-			<label id="dropdown-label" for="options">What is your favorite feature of freeCodeCamp?</label><br>
+			<label id="label" for="options">What is your favorite feature of freeCodeCamp?</label><br>
 			<select id="dropdown-two" name="features">
 				<option disabled selected>Select an option</option>
 				<option value="challenges">Challenges</option>
@@ -43,7 +44,7 @@
 				<option value="open-source">Open Source</option>
 			</select>	
 			<br><br>	
-			<label id="checkbox-label">What would you like to see improved?<span style="font-size:17px;"> (Check all that apply)</span></label><br>
+			<label id="label">What would you like to see improved?<span style="font-size:17px;"> (Check all that apply)</span></label><br>
 			<input type="checkbox" name="feature-improve" value="front-end-projects" checked>Front End projects<br>
 			<input type="checkbox" name="feature-improve" value="back-end-projects">Back End projects<br>
 			<input type="checkbox" name="feature-improve" value="data-visualization">Data visualization<br>
@@ -51,7 +52,7 @@
 			<input type="checkbox" name="feature-improve" value="open-source-community">Open Source community<br>
 			<input type="checkbox" name="feature-improve" value="additional-courses">Additional courses
 			<br><br>
-			<label id="textarea">Any comments or suggestions?</label><br>
+			<label id="label">Any comments or suggestions?</label><br>
 			<textarea placeholder="Enter your comment here..." style="width:512px; height:120px; font-size:15px; border:0px; border-radius:2px;"></textarea><br><br>
 			<input id="submit" style="width:517px; height:35px;" type="submit" name="submitBtn" value="Submit">
 		</form>
