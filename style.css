@@ -1,18 +1,22 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+}
 body {
-	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("body-background.jpg");
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url("body-background.jpg");
 	background-size: cover;
-	color: white;
+	color: #FFFFFF;
 	font-size: 17px;
 }
 #title {
 	text-align: center;
-	color: white;
+	color: #FFFFFF;
 	font-size: 36px;
 }
 .desciprtion {
 	text-align: center;
-	color: aliceblue;
+	color: #F0F8FF;
 	font-size: 18px;
+	font-style: italic;
 }
 .container {
 	display: flex;
@@ -21,13 +25,13 @@ body {
 #survey-form {
 	background-color: rgba(60, 70, 130, 0.4);
 	padding: 20px;
-	border: 1px solid black;
+	border: 1px solid #000000;
 }
-#name-label {
-	color: aliceblue;
+#label {
+	color: #F0F8FF;
 	font-size: 23px;
 }
-#name {
+#name , #email, #number {
 	font-size: 15px;
 	width: 510px;
 	height: 17px;
@@ -35,66 +39,54 @@ body {
 	border: 0px;
 	border-radius: 2px;
 }
-#email-label {
-	color: aliceblue;
-	font-size: 24px;
-}
-#email {
-	font-size: 15px;
-	width: 510px;
-	height: 17px;
-	padding: 3px;
-	border: 0px;
-	border-radius: 2px;
-}
-#number-label {
-	color: aliceblue;
-	font-size: 24px;
-}
-#number {
-	font-size: 15px;
-	width: 510px;
-	height: 17px;
-	padding: 3px;
-	border: 0px;
-	border-radius: 2px;	
-}
-#dropdown-label {
-	color: aliceblue;
-	font-size: 24px;
-}
-#dropdown-one {
+#dropdown-one, #dropdown-two {
 	font-size: 15px;
 	width: 515px;
 	height: 26px;
 	padding: 3px;
-}
-#dropdown-two {
-	font-size: 15px;
-	width: 515px;
-	height: 26px;
-	padding: 3px;
-}
-#radio-label {
-	color: aliceblue;
-	font-size: 24px;
-}
-#checkbox-label {
-	color: aliceblue;
-	font-size: 24px;
-}
-#textarea {
-	color: aliceblue;
-	font-size: 24px;	
 }
 input[type=submit] {
 	font-size: 16px;
-	background-color: aquamarine;
+	background-color: #7FFFD4;
 	border: 0px;
 	border-radius: 2px;
 	cursor: pointer;
 }
 input[type=submit]:hover {
-	background-color: transparent;
-	border: 2px solid black;
+	border: 2px solid #000000;
+}
+
+@media screen and (max-width:768px) {
+	#title {
+		font-size: 30px;
+	}
+	.desciprtion {
+		font-size: 16px;
+	}
+	#survey-form {
+		padding: 15px;
+	}
+	#label {
+		font-size: 20px;
+	}
+	body {
+		background-size: cover no-repeat;
+	}
+}
+@media only screen and (max-width: 600px) {
+	#title {
+		font-size: 25px;
+	}
+	.desciprtion {
+		font-size: 17px;
+	}
+	#survey-form {
+		padding: 10px;
+	}
+	#label {
+		font-size: 18px;
+	}
+	body {
+		background-size: cover no-repeat;
+	}
 }
